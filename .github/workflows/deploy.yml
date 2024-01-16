@@ -10,8 +10,8 @@ jobs:
   test:
     env:
       MONGODB_CLUSTER_ADDRESS: jakai-cluster1.uhqgw5l.mongodb.net
-      MONGODB_USERNAME: jakai
-      MONGODB_PASSWORD: SkdokZ45Xi79b06U
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       PORT: 8080
     runs-on: ubuntu-latest
     steps:
